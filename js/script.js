@@ -1,26 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 联系表单提交处理
+    // Contact form submission handler.
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // 获取表单数据
+            // Read form data.
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
             
-            // 在实际应用中，你应该将这些数据发送到服务器
-            // 这里我们只是简单地显示一个确认消息
-            alert(`感谢您的留言，${name}！我会尽快回复您。`);
+            // A production site would send these values to a backend service.
+            alert(`Thanks for your message, ${name}. I will get back to you soon.`);
             
-            // 清空表单
+            // Clear the form.
             contactForm.reset();
         });
     }
 
-    // 添加滚动到顶部按钮
+    // Add a scroll-to-top button.
     const scrollToTopBtn = document.createElement('button');
     scrollToTopBtn.innerHTML = '&uarr;';
     scrollToTopBtn.className = 'scroll-to-top';
@@ -34,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 监听滚动事件，显示/隐藏滚动到顶部按钮
+    // Toggle the scroll-to-top button while scrolling.
     window.addEventListener('scroll', function() {
         if (window.pageYOffset > 200) {
             scrollToTopBtn.style.display = 'block';
@@ -43,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 为导航菜单项添加激活状态
+    // Add active state to matching navigation items.
     const currentLocation = window.location.pathname;
     const navItems = document.querySelectorAll('nav ul li a');
     
@@ -56,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// 添加博客文章搜索功能
+// Blog post search helper.
 function searchBlog() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
     const blogPosts = document.querySelectorAll('.post-item, .post-card');
