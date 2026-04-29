@@ -3,156 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第一篇博客文章 - 我的个人博客</title>
+    <title>第一篇博客文章 | BloomFallr</title>
+    <meta name="description" content="BloomFallr 的第一篇博客文章。">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>我的博客</h1>
-            <p>分享我的思考与经验</p>
-        </div>
-    </header>
-    
-    <nav>
-        <div class="container">
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="container nav-inner">
+            <a class="brand" href="../index.html">BloomFallr</a>
             <ul>
-                <li><a href="../index.html">首页</a></li>
-                <li><a href="../blog.html" class="active">博客</a></li>
-                <li><a href="../about.html">关于我</a></li>
-                <li><a href="../contact.html">联系方式</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#research">Research</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    
+
     <main>
         <div class="container">
             <article class="post-full">
                 <div class="post-header">
                     <h2>第一篇博客文章</h2>
                     <div class="post-meta">
-                        <span class="post-date"><i class="far fa-calendar-alt"></i> 2023年11月1日</span>
-                        <span class="category"><i class="fas fa-folder"></i> 技术</span>
-                        <span class="comments"><i class="fas fa-comments"></i> 3条评论</span>
+                        <span><i class="far fa-calendar-alt"></i> 2025年3月4日</span>
+                        <span><i class="fas fa-folder"></i> 随笔</span>
                     </div>
                 </div>
-                
+
                 <div class="post-content-full">
-                    <!-- 在这里添加你的博客文章内容 -->
-                    <p>这是你的第一篇博客文章。请在这里添加你的内容。你可以写关于任何主题的内容，分享你的想法、经验或知识。</p>
-                    
-                    <p>这里是段落示例。你可以谈论你的专业领域、兴趣爱好、近期的发现或者任何你想分享的想法。</p>
-                    
-                    <h3>这是一个小标题</h3>
-                    <p>你可以使用标题来组织你的文章结构，让读者更容易理解你的内容。</p>
-                    
-                    <blockquote>
-                        这是一段引用文字。你可以引用别人的话或者突出显示某些重要的观点。
-                    </blockquote>
-                    
-                    <p>你也可以插入图片来丰富你的文章：</p>
-                    <img src="https://via.placeholder.com/800x400" alt="示例图片">
-                    
-                    <h3>列表示例</h3>
-                    <p>这是一个无序列表：</p>
+                    <p>
+                        这是这个站点的第一篇文章草稿。之后可以把它替换为真正的学习笔记、项目复盘、
+                        读论文记录，或者保留为建站日志。
+                    </p>
+
+                    <p>
+                        这个主页当前的目标很简单：把个人信息、关注方向、项目入口和写作入口放在一个干净、
+                        容易维护的位置。内容增长以后，再考虑增加归档、标签、项目详情页等功能。
+                    </p>
+
+                    <h3>接下来可以写什么</h3>
                     <ul>
-                        <li>列表项目一</li>
-                        <li>列表项目二</li>
-                        <li>列表项目三</li>
+                        <li>深度学习课程和论文阅读笔记</li>
+                        <li>游戏开发 Demo 的设计与实现记录</li>
+                        <li>工具链、调试经验和代码片段整理</li>
                     </ul>
-                    
-                    <p>这是一个有序列表：</p>
-                    <ol>
-                        <li>第一步</li>
-                        <li>第二步</li>
-                        <li>第三步</li>
-                    </ol>
-                    
-                    <h3>结论</h3>
-                    <p>在这里总结你的文章内容，提出最后的观点或者给读者一些思考。</p>
-                </div>
-                
-                <div class="post-footer">
-                    <div class="post-tags">
-                        <span>标签:</span>
-                        <a href="#">技术</a>
-                        <a href="#">编程</a>
-                        <a href="#">博客</a>
-                    </div>
-                    
-                    <div class="post-share">
-                        <span>分享:</span>
-                        <a href="#"><i class="fab fa-weixin"></i></a>
-                        <a href="#"><i class="fab fa-weibo"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
+
+                    <blockquote>
+                        先把内容写起来，再逐步优化结构。
+                    </blockquote>
+
+                    <h3>维护方式</h3>
+                    <p>
+                        这个站点是纯静态页面，适合用 GitHub Pages 部署。新增文章时，可以复制当前 HTML 文件，
+                        修改标题、日期和正文，然后在 <a href="../blog.html">Blog</a> 页面添加一条列表项。
+                    </p>
                 </div>
             </article>
-            
-            <section class="post-comments">
-                <h3>评论 (3)</h3>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="comment-author">张三</span>
-                        <span class="comment-date">2023年11月2日</span>
-                    </div>
-                    <p>这篇文章很有启发性，谢谢分享！</p>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="comment-author">李四</span>
-                        <span class="comment-date">2023年11月3日</span>
-                    </div>
-                    <p>我对这个话题也很感兴趣，你提供的信息对我很有帮助。</p>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="comment-author">王五</span>
-                        <span class="comment-date">2023年11月5日</span>
-                    </div>
-                    <p>对于这个问题，我有不同的见解。我认为...</p>
-                </div>
-                
-                <div class="comment-form">
-                    <h4>发表评论</h4>
-                    <form>
-                        <div class="form-group">
-                            <label for="commentName">姓名</label>
-                            <input type="text" id="commentName" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="commentEmail">邮箱</label>
-                            <input type="email" id="commentEmail" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="commentContent">评论内容</label>
-                            <textarea id="commentContent" name="content" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn">发表评论</button>
-                    </form>
-                </div>
-            </section>
         </div>
     </main>
-    
+
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-                <p>&copy; 2023 我的个人博客. 保留所有权利。</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 BloomFallr.</p>
+            <div class="footer-links">
+                <a href="https://github.com/BloomFallr" target="_blank" rel="noopener">GitHub</a>
+                <a href="../index.html">Home</a>
+                <a href="../blog.html">Blog</a>
             </div>
         </div>
     </footer>

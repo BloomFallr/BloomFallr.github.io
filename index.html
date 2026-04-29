@@ -3,69 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人博客 - 首页</title>
+    <title>BloomFallr | Home</title>
+    <meta name="description" content="BloomFallr 的个人主页，记录深度学习、游戏开发与学习笔记。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>我的博客</h1> <!-- 在这里修改你的博客名称 -->
-            <p>分享我的思考与经验</p> <!-- 在这里修改你的博客简介 -->
-        </div>
-    </header>
-    
-    <nav>
-        <div class="container">
+<body class="home-page">
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="container nav-inner">
+            <a class="brand" href="index.html">BloomFallr</a>
             <ul>
-                <li><a href="index.html" class="active">首页</a></li>
-                <li><a href="blog.html">博客</a></li>
-                <li><a href="about.html">关于我</a></li>
-                <li><a href="contact.html">联系方式</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    
-    <main>
-        <div class="container">
-            <section class="featured-posts">
-                <h2>精选文章</h2>
-                <div class="post-grid">
-                    <!-- 在这里添加你的精选博客文章 -->
-                    <article class="post-card">
-                        <img src="https://via.placeholder.com/300x200" alt="文章配图">
-                        <div class="post-content">
-                            <h3><a href="posts/first-post.html">第一篇博客文章</a></h3>
-                            <p class="post-date">2025年3月4日</p>
-                            <p>摘要</p>
-                            <a href="posts/first-post.html" class="read-more">阅读更多</a>
-                        </div>
-                    </article>
-                    
-                    <!-- 可以添加更多的文章卡片 -->
+
+    <main class="academic-home">
+        <section class="profile-section container" aria-labelledby="profile-title">
+            <div class="portrait-wrap">
+                <img class="portrait" src="https://github.com/BloomFallr.png" alt="BloomFallr 的头像">
+            </div>
+
+            <div class="profile-copy">
+                <p class="eyebrow">Personal Homepage</p>
+                <h1 id="profile-title">BloomFallr</h1>
+                <p class="role">Undergraduate Student · University of Science and Technology of China</p>
+
+                <div class="profile-links" aria-label="Profile links">
+                    <a href="https://github.com/BloomFallr" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="blog.html" aria-label="Blog">
+                        <i class="fas fa-pen-nib"></i>
+                    </a>
+                    <a href="contact.html" aria-label="Contact">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
-            </section>
-            
-            <section class="about-preview">
-                <h2>关于我</h2>
-                <div class="about-content">
-                    <img src="https://via.placeholder.com/200x200" alt="个人照片" class="profile-image">
-                    <div>
-                        <p>一位中科大本科生, 喜欢游戏, 正在学习 DL 与游戏开发.</p>
-                        <a href="about.html" class="btn">了解更多</a>
+
+                <p>
+                    我是中国科学技术大学本科生，目前关注深度学习与游戏开发。这个主页会用于整理学习轨迹、
+                    项目记录、读论文笔记，以及一些和工程实践相关的想法。
+                </p>
+                <p>
+                    现阶段我希望把站点做成一个长期可维护的个人档案：主页负责展示重点，博客负责沉淀内容，
+                    之后可以继续扩展项目页、课程笔记或研究记录。
+                </p>
+            </div>
+        </section>
+
+        <section class="container section-block" aria-labelledby="news-title">
+            <h2 id="news-title">News</h2>
+            <div class="news-list">
+                <article class="news-item">
+                    <time datetime="2026-04">04 / 2026</time>
+                    <p>Refactored this homepage into a cleaner academic-style personal site.</p>
+                </article>
+                <article class="news-item">
+                    <time datetime="2025-03-04">03 / 2025</time>
+                    <p>Published the first blog post draft and started organizing the GitHub Pages site.</p>
+                </article>
+                <article class="news-item">
+                    <time datetime="2025">2025</time>
+                    <p>Started learning deep learning and game development more systematically.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section-block" id="research" aria-labelledby="research-title">
+            <h2 id="research-title">Research & Projects</h2>
+            <p class="section-note">
+                当前这里先放学习和项目方向。等后续有论文、课程项目或 Demo，可以把每一项替换成正式条目。
+            </p>
+
+            <div class="focus-list">
+                <article class="focus-item">
+                    <div class="focus-thumb dl-thumb" aria-hidden="true">
+                        <span>DL</span>
                     </div>
-                </div>
-            </section>
-        </div>
+                    <div>
+                        <h3>Deep Learning Notes</h3>
+                        <p class="meta">Learning track · neural networks, vision, generative models</p>
+                        <p>
+                            系统整理深度学习基础、模型实现、论文阅读和实验复现，把零散学习变成可回顾的材料。
+                        </p>
+                        <div class="item-links">
+                            <a href="blog.html">Notes</a>
+                            <a href="https://github.com/BloomFallr" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="focus-item">
+                    <div class="focus-thumb game-thumb" aria-hidden="true">
+                        <span>DEV</span>
+                    </div>
+                    <div>
+                        <h3>Game Development Practice</h3>
+                        <p class="meta">Project track · gameplay systems, tools, rendering</p>
+                        <p>
+                            记录游戏开发中的系统设计、工具链、交互实现和性能优化，关注能真正跑起来的作品。
+                        </p>
+                        <div class="item-links">
+                            <a href="blog.html">Devlog</a>
+                            <a href="contact.html">Discuss</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section-block" id="writing" aria-labelledby="writing-title">
+            <h2 id="writing-title">Writing</h2>
+            <div class="writing-list">
+                <article class="writing-item">
+                    <time datetime="2025-03-04">2025.03.04</time>
+                    <div>
+                        <h3><a href="posts/first-post.html">第一篇博客文章</a></h3>
+                        <p>站点初始文章。后续可以替换成学习笔记、项目复盘或论文阅读记录。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
-    
+
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com/BloomFallr"><i class="fab fa-github"></i></a>
-                </div>
-                <p>&copy; 2025 我的个人博客. 保留所有权利。</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 BloomFallr.</p>
+            <div class="footer-links">
+                <a href="https://github.com/BloomFallr" target="_blank" rel="noopener">GitHub</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
     </footer>

@@ -3,65 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人博客 - 关于我</title>
+    <title>About | BloomFallr</title>
+    <meta name="description" content="关于 BloomFallr 的简介、兴趣方向与链接。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>我的博客</h1>
-            <p>分享我的思考与经验</p>
-        </div>
-    </header>
-    
-    <nav>
-        <div class="container">
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="container nav-inner">
+            <a class="brand" href="index.html">BloomFallr</a>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="blog.html">博客</a></li>
-                <li><a href="about.html" class="active">关于我</a></li>
-                <li><a href="contact.html">联系方式</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    
+
+    <header>
+        <div class="container">
+            <h1>About</h1>
+            <p>一些更完整的个人信息和当前关注方向。</p>
+        </div>
+    </header>
+
     <main>
         <div class="container">
             <section class="about-page">
-                <h2>关于我</h2>
-                
+                <h2>BloomFallr</h2>
+
                 <div class="about-content">
-                    <img src="https://via.placeholder.com/300x300" alt="个人照片" class="profile-image">
-                    
+                    <img src="https://github.com/BloomFallr.png" alt="BloomFallr 的头像" class="profile-image">
+
                     <div class="about-text">
-                        <h3>BloomFallr</h3> <!-- 在这里修改为你的名字 -->
-                        <p class="bio">一位中科大本科生, 喜欢游戏, 正在学习 DL 与游戏开发.</p> <!-- 在这里修改为你的简介 -->
-                        
+                        <p class="bio">中国科学技术大学本科生，喜欢游戏，正在学习深度学习与游戏开发。</p>
+                        <p>
+                            我希望把这个站点作为长期维护的公开笔记本：记录课程学习、论文阅读、工程实践和项目迭代。
+                            主页会展示重点内容，博客会保留更完整的过程。
+                        </p>
+
                         <div class="skills">
-                            <h4>Skills</h4>
+                            <h4>Interests</h4>
                             <ul>
-                                <li></li> <!-- 修改为你的技能 -->
+                                <li>Deep Learning</li>
+                                <li>Game Development</li>
+                                <li>Computer Graphics</li>
+                                <li>Programming Tools</li>
                             </ul>
                         </div>
-                        
+
                         <div class="social-links">
-                            <h4>在社交媒体上找到我</h4>
-                            <a href="https://github.com/BloomFallr"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/BloomFallr" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="blog.html"><i class="fas fa-pen-nib"></i> Blog</a>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-    
+
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com/BloomFallr"><i class="fab fa-github"></i></a>
-                </div>
-                <p>&copy; 2025 我的个人博客. 保留所有权利。</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 BloomFallr.</p>
+            <div class="footer-links">
+                <a href="https://github.com/BloomFallr" target="_blank" rel="noopener">GitHub</a>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
     </footer>

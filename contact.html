@@ -3,85 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人博客 - 联系方式</title>
+    <title>Contact | BloomFallr</title>
+    <meta name="description" content="BloomFallr 的联系方式。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>我的博客</h1>
-            <p>分享我的思考与经验</p>
-        </div>
-    </header>
-    
-    <nav>
-        <div class="container">
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="container nav-inner">
+            <a class="brand" href="index.html">BloomFallr</a>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="blog.html">博客</a></li>
-                <li><a href="about.html">关于我</a></li>
-                <li><a href="contact.html" class="active">联系方式</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </div>
     </nav>
-    
+
+    <header>
+        <div class="container">
+            <h1>Contact</h1>
+            <p>欢迎通过 GitHub 或站内表单留下想法。</p>
+        </div>
+    </header>
+
     <main>
         <div class="container">
             <section class="contact-page">
-                <h2>联系我</h2>
-                
+                <h2>Get in Touch</h2>
+
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>联系方式</h3>
+                        <h3>Links</h3>
                         <ul>
-                            <li><i class="fab fa-github"></i> <a href="https://github.com/BloomFallr" target="_blank">github.com/yourusername</a></li> <!-- 修改为你的GitHub账号 -->
+                            <li><i class="fab fa-github"></i> <a href="https://github.com/BloomFallr" target="_blank" rel="noopener">github.com/BloomFallr</a></li>
                         </ul>
-                        
-                        <h3>关注我</h3>
-                        <p>如果你喜欢我的博客，可以通过以下方式获取最新更新：</p>
-                        <ul>
-                        </ul>
+
+                        <h3>Notes</h3>
+                        <p>这个静态站点没有后端服务，表单目前只会在本地给出提交提示；正式联系建议优先使用 GitHub。</p>
                     </div>
-                    
+
                     <div class="contact-form">
-                        <h3>给我留言</h3>
+                        <h3>Message Draft</h3>
                         <form id="contactForm">
                             <div class="form-group">
                                 <label for="name">姓名</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="email">邮箱</label>
                                 <input type="email" id="email" name="email" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="subject">主题</label>
                                 <input type="text" id="subject" name="subject" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="message">留言内容</label>
                                 <textarea id="message" name="message" rows="5" required></textarea>
                             </div>
-                            
-                            <button type="submit" class="btn">发送留言</button>
+
+                            <button type="submit" class="btn">生成提示</button>
                         </form>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-    
+
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com/BloomFallr"><i class="fab fa-github"></i></a>
-                </div>
-                <p>&copy; 2025 我的个人博客. 保留所有权利。</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 BloomFallr.</p>
+            <div class="footer-links">
+                <a href="https://github.com/BloomFallr" target="_blank" rel="noopener">GitHub</a>
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
             </div>
         </div>
     </footer>

@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人博客 - 博客文章</title>
+    <title>Writing | BloomFallr</title>
+    <meta name="description" content="BloomFallr 的博客文章与学习笔记。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>我的博客</h1>
-            <p>分享我的思考与经验</p>
-        </div>
-    </header>
-    
-    <nav>
-        <div class="container">
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="container nav-inner">
+            <a class="brand" href="index.html">BloomFallr</a>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="blog.html" class="active">博客</a></li>
-                <li><a href="about.html">关于我</a></li>
-                <li><a href="contact.html">联系方式</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    
+
+    <header>
+        <div class="container">
+            <h1>Writing</h1>
+            <p>学习笔记、项目复盘和一些持续更新的想法。</p>
+        </div>
+    </header>
+
     <main>
         <div class="container">
             <section class="blog-posts">
-                <h2>所有文章</h2>
-                
+                <h2>All Posts</h2>
+
                 <div class="post-filters">
                     <span>分类:</span>
                     <a href="#" class="active">全部</a>
-                    <a href="#">技术</a>
-                    <a href="#">生活</a>
-                    <a href="#">思考</a>
-                    <!-- 添加更多你的博客分类 -->
+                    <a href="#">深度学习</a>
+                    <a href="#">游戏开发</a>
+                    <a href="#">随笔</a>
                 </div>
-                
+
                 <div class="post-list">
-                    <!-- 在这里添加你的博客文章列表 -->
                     <article class="post-item">
                         <div class="post-date">
                             <span class="day">04</span>
@@ -51,34 +52,24 @@
                         <div class="post-content">
                             <h3><a href="posts/first-post.html">第一篇博客文章</a></h3>
                             <div class="post-meta">
-                                <span class="category"><i class="fas fa-folder"></i> 技术</span>
-                                <span class="comments"><i class="fas fa-comments"></i> 3条评论</span>
+                                <span class="category"><i class="fas fa-folder"></i> 随笔</span>
                             </div>
-                            <p>摘要</p>
+                            <p>站点的第一篇文章草稿，后续可以替换成真正的学习笔记或项目记录。</p>
                             <a href="posts/first-post.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
-                    
-                    <!-- 可以添加更多的文章 -->
-                </div>
-                
-                <div class="pagination">
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#" class="next"><i class="fas fa-angle-right"></i></a>
                 </div>
             </section>
         </div>
     </main>
-    
+
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com/BloomFallr"><i class="fab fa-github"></i></a>
-                </div>
-                <p>&copy; 2025 我的个人博客. 保留所有权利。</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 BloomFallr.</p>
+            <div class="footer-links">
+                <a href="https://github.com/BloomFallr" target="_blank" rel="noopener">GitHub</a>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
     </footer>
