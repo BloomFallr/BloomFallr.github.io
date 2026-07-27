@@ -7,9 +7,9 @@ Personal website built with static HTML, CSS, and JavaScript for GitHub Pages.
 ```text
 /
 ├── index.html            # Home page
+├── research.html         # Research and projects
 ├── blog.html             # Blog index
 ├── about.html            # About page
-├── contact.html          # Contact page
 ├── css/
 │   └── style.css         # Main stylesheet
 ├── js/
@@ -20,9 +20,9 @@ Personal website built with static HTML, CSS, and JavaScript for GitHub Pages.
 ## Customization
 
 1. Update page titles and meta descriptions in each HTML file.
-2. Add research or project entries in `index.html`.
-3. Add writing entries in `index.html` and detailed posts under `posts/`.
-4. Add post links to `blog.html`.
+2. Add research or project entries to `research.html`, then link selected items from `index.html`.
+3. Add post entries to `blog.html`, link recent items from `index.html`, and place detailed posts under `posts/`.
+4. Add contact methods to the `.social-links` section in `about.html`.
 5. Adjust visual styles in `css/style.css`.
 
 ## Deployment

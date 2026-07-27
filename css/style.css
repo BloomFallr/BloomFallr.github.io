@@ -23,6 +23,9 @@ html {
 
 body {
     min-width: 320px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     color: var(--ink);
     background: var(--paper);
     font-family: Georgia, "Times New Roman", "Noto Serif SC", "Songti SC", serif;
@@ -126,6 +129,7 @@ header p {
 }
 
 main {
+    flex: 1 0 auto;
     padding: 40px 0 54px;
 }
 
@@ -135,14 +139,14 @@ main {
 
 .profile-section {
     display: grid;
-    grid-template-columns: 180px minmax(0, 1fr);
+    grid-template-columns: 280px minmax(0, 1fr);
     gap: 34px;
     align-items: start;
     margin-bottom: 42px;
 }
 
 .portrait-wrap {
-    width: 180px;
+    width: 280px;
     padding: 6px;
     border: 1px solid var(--line);
     border-radius: 7px;
@@ -245,6 +249,85 @@ h2 {
 .section-note {
     color: var(--muted);
     margin-bottom: 12px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.entry-list {
+    display: grid;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.entry-list-home {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.entry-card {
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--paper);
+    box-shadow: 0 8px 24px rgba(17, 24, 39, 0.05);
+}
+
+.entry-card h3 {
+    margin: 9px 0 7px;
+    font-size: 1.2rem;
+}
+
+.entry-card p {
+    color: #5c626a;
+}
+
+.entry-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px 12px;
+    color: var(--muted);
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.86rem;
+}
+
+.entry-type,
+.temp-label {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 0 9px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.entry-type {
+    color: var(--link-dark);
+    background: #e7f2f8;
+}
+
+.temp-label {
+    color: #7c5607;
+    background: #fff4cf;
+}
+
+.entry-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 14px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.94rem;
+    font-weight: 700;
+}
+
+.entry-link-muted {
+    color: var(--muted);
+    font-weight: 600;
 }
 
 .news-list,
@@ -360,6 +443,7 @@ h2 {
 }
 
 footer {
+    flex-shrink: 0;
     border-top: 1px solid var(--line);
     background: var(--wash);
     color: var(--muted);
@@ -410,7 +494,6 @@ footer {
 
 .post-card,
 .about-preview,
-.contact-form,
 .comment,
 .comment-form {
     border: 1px solid var(--line);
@@ -430,7 +513,6 @@ footer {
 }
 
 .post-content,
-.contact-form,
 .comment,
 .comment-form,
 .about-preview {
@@ -576,20 +658,9 @@ footer {
     text-decoration: none;
 }
 
-.contact-content {
-    display: grid;
-    grid-template-columns: minmax(220px, 0.8fr) minmax(300px, 1.2fr);
-    gap: 34px;
-}
-
-.contact-info ul,
 .skills ul {
     list-style: none;
     margin: 12px 0 22px;
-}
-
-.contact-info li {
-    margin-bottom: 12px;
 }
 
 .skills li {
@@ -602,32 +673,6 @@ footer {
     margin: 4px 6px 4px 0;
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 0.92rem;
-}
-
-.form-group {
-    margin-bottom: 16px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--ink);
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-weight: 700;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    padding: 10px 12px;
-    font: inherit;
-    background: #ffffff;
-}
-
-.form-group textarea {
-    resize: vertical;
 }
 
 .post-header {
@@ -730,13 +775,20 @@ footer {
     }
 
     .profile-section,
-    .focus-item,
-    .contact-content {
+    .focus-item {
+        grid-template-columns: 1fr;
+    }
+
+    .entry-list-home {
         grid-template-columns: 1fr;
     }
 
     .profile-copy {
         padding-top: 0;
+    }
+
+    .portrait-wrap {
+        width: 180px;
     }
 
     .focus-thumb {
